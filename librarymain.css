@@ -1,0 +1,19 @@
+body
+{
+    background-color: #8f91a6;
+}
+/* main.css */
+/* Set the color of text to black */
+body,
+.navbar-brand,
+.navbar-nav .nav-link,
+.form-control,
+.form-check-label,
+.btn ,
+#table h1,
+#table th ,
+#bookName,
+#author {
+    color: black;
+    font-size: 20px;
+}

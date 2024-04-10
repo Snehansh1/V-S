@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Timings</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="travelstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Bus Timings</h1>
+        <div id="routeSelection">
+            <label for="route">Select Route:</label>
+            <select id="route">
+                <option value="indore">VIT Bhopal to Indore</option>
+                <option value="bhopal">VIT Bhopal to Bhopal</option>
+                <option value="indore_reverse">Indore to VIT Bhopal</option>
+                <option value="bhopal_reverse">Bhopal to VIT Bhopal</option>
+            </select>
+            <label for="date">Select Date:</label>
+            <input type="text" id="date" class="datepicker">
+            <button onclick="showBuses()">Show Buses</button>
+        </div>
+    </header>
+
+    <div id="busList">
+        <!-- Bus timings and prices will be displayed here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="travelscript.js"></script>
+</body>
+</html>

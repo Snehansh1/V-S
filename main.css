@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+img.logo {
+  position: relative;
+  top: 20px; /* Adjust top position as needed */
+  left: 20px; /* Adjust left position as needed */
+  width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+body {
+  background-color: #23243a;
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  color: #0583D2;
+  letter-spacing: 0.2em;
+  font-size: 55px;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #222;
+  line-height: 0.1em;
+}
+
+p span {
+  background:#fff;
+  padding:0 6px;
+  border-radius: 80%
+}
+
+input {
+  margin-bottom: 3%;
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+input, button {
+  padding: 3%;
+  width: 100%;
+}
+
+.login-container {
+  background-color: #201e1e;
+  border-radius: 40px;
+  padding: 7%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* horizontal align */
+  width: 40vw;
+  margin-left: 30vw;
+  /* vertical align */
+  height: 75vh;
+  margin-top: 5vh;
+}
+
+#submit, #create-acct-btn {
+  background-color: #0583D2;
+  /* border: 2px soli transparent */
+  border-radius: 8px;
+  color: #fff;
+  border: none;  
+  margin-top: 5%;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#sign-up {
+  background-color: #0583D2;
+  /* border: 2px soli transparent */
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  margin-top: 5%;
+}
+
+#create-acct {
+  display: none;
+}
+
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}

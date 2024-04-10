@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V Swipe</title>
+    <link rel="stylesheet" href="stylew.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sendMoneyForm').submit(function(e) {
+                e.preventDefault(); // Prevent default form submission
+
+                // Prepare form data
+                var formData = $(this).serialize();
+
+                // Send AJAX request
+                $.ajax({
+                    type: 'GET',
+                    url: 'sendmoney.php', // Path to your PHP file
+                    data: formData,
+                    dataType: 'json',
+                    success: function(response) {
+                        // Handle response
+                        alert(response.msg);
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle errors
+                        console.error(xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <video autoplay loop muted>
+            <source src="1943483-hd_1920_1080_25fps.mp4" type="video/mp4">
+        </video>
+        <h1 class="text-box">V-SWIPE</h1>
+    </div>
+
+    <div class="wrapper">
+        <nav class="navbar">
+            <img class="logo" src="images/logo-nobackground.png" height="10" width="20">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="index.html">Food</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="PHP/phpback.php">E Wallet</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h2>Send Money</h2>
+        <form id="sendMoneyForm" method="GET">
+            <label for="user_mobile_no">Recipient Mobile No:</label><br>
+            <input type="text" id="user_mobile_no" name="user_mobile_no"><br>
+            <label for="amount">Amount:</label><br>
+            <input type="text" id="amount" name="amount"><br><br>
+            <input type="hidden" name="sendmoney" value="1">
+            <input type="submit" value="Send Money">
+        </form>
+    </div>
+
+</body>
+</html>

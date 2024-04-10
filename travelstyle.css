@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #ff5722; /* Orange */
+    --secondary-color: #000000; /* Black */
+    --button-hover-color: #ff7043; /* Light Orange for button hover */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color); /* Black */
+    color: #fff; /* White */
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* White */
+}
+
+h1 {
+    margin: 0;
+}
+
+#routeSelection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-right: 10px;
+    color: #fff; /* White */
+}
+
+select,
+input.datepicker,
+button {
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color); /* Black */
+    color: #fff; /* White */
+}
+
+select,
+input.datepicker {
+    min-width: 200px;
+}
+
+button {
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+#busList {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.bus {
+    background-color: #333; /* Dark Gray */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.bus p {
+    margin: 5px 0;
+    color: #fff; /* White */
+}
+
+.bus p:first-child {
+    font-weight: bold;
+}
